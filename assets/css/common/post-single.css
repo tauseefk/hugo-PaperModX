@@ -24,12 +24,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .breadcrumbs a {
     font-size: 16px;
 }
 
 .post-content {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--content);
 }
 
@@ -38,6 +39,7 @@
 .post-content h6 {
     margin: 24px 0 16px;
 }
+
 .post-content h3 {
     margin: 32px 0 24px;
 }
@@ -74,10 +76,12 @@
     box-shadow: var(--link-underline-shadow);
     transition: var(--link-transition);
 }
+
 .post-content a:hover {
     color: var(--link-hover-color);
     box-shadow: var(--link-hover-underline-shadow);
 }
+
 .post-content a.anchor:hover {
     color: var(--primary);
     box-shadow: 0 2px 0 var(--secondary);
@@ -88,6 +92,7 @@
     border-radius: 0;
     box-shadow: 0 -1px 0 var(--primary) inset;
 }
+
 .post-content a:hover code {
     box-shadow: 0 -1px 0 var(--link-hover-underline-color) inset, 0 1px 0 var(--link-hover-underline-color);
 }
@@ -135,8 +140,8 @@ h6:hover .anchor {
     padding-inline-start: 20px;
 }
 
-.post-content li > ol,
-.post-content li > ul {
+.post-content li>ol,
+.post-content li>ul {
     margin-bottom: 0;
 }
 
@@ -165,8 +170,8 @@ h6:hover .anchor {
     padding-inline-start: 10px;
 }
 
-.post-content dd ~ dd,
-.post-content dt ~ dt {
+.post-content dd~dd,
+.post-content dt~dt {
     margin-top: 10px;
 }
 
@@ -200,7 +205,7 @@ h6:hover .anchor {
     border-radius: var(--radius);
 }
 
-.post-content li > .highlight {
+.post-content li>.highlight {
     margin-inline-end: 0;
 }
 
@@ -237,6 +242,7 @@ h6:hover .anchor {
 .post-content .chroma {
     border-radius: var(--radius);
 }
+
 /* TODO refactor this shit */
 .post-content code {
     /* inline code */
@@ -247,6 +253,7 @@ h6:hover .anchor {
     font-size: .95em;
     font-family: var(--monospace);
 }
+
 .post-content pre code {
     /* reset inline code */
     display: block;
@@ -257,6 +264,7 @@ h6:hover .anchor {
     word-break: break-all;
     font-family: var(--monospace);
 }
+
 .post-content .chroma code {
     background-color: inherit;
     font-family: var(--monospace);
@@ -272,21 +280,26 @@ h6:hover .anchor {
 .post-content sup {
     line-height: 1;
 }
+
 .post-content sup a {
     box-shadow: none;
     font-family: Helvetica, Arial, sans-serif;
     color: var(--link-hover-color);
 }
+
 .post-content sup a:hover {
     box-shadow: none;
     text-decoration: underline;
 }
+
 .post-content sup a:before {
     content: "[";
 }
+
 .post-content sup a:after {
     content: "]";
 }
+
 .post-content sup:target {
     background-color: var(--link-background-color);
 }
@@ -320,14 +333,14 @@ h6:hover .anchor {
     text-align: center;
 }
 
-.post-content figure > figcaption {
+.post-content figure>figcaption {
     color: var(--primary);
     font-size: 16px;
     font-weight: bold;
     margin: 8px 0 16px;
 }
 
-.post-content figure > figcaption > p {
+.post-content figure>figcaption>p {
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
@@ -340,9 +353,11 @@ h6:hover .anchor {
     border-radius: var(--radius);
     padding: 0.4em 0;
 }
+
 .toc.side {
     font-size: .8em;
 }
+
 @media screen and (min-width: 1350px) {
     .toc.side {
         position: fixed;
@@ -351,13 +366,16 @@ h6:hover .anchor {
         max-height: calc(100% - 150px);
         overflow: auto;
     }
+
     .toc.side::-webkit-scrollbar-thumb {
         border: 5px solid var(--code-bg);
     }
+
     .toc.side.left {
         left: 15px;
         width: 250px;
     }
+
     .toc.side.right {
         right: 15px;
         width: 265px;
@@ -382,18 +400,22 @@ h6:hover .anchor {
     margin: 0;
     padding: 0;
 }
+
 .toc li ul {
     margin-inline-start: 20px;
 }
+
 .toc li a {
     line-height: 1.5em;
     padding: 3px 5px;
     border-radius: 5px;
     display: block;
 }
+
 .toc li a.active {
     background-color: var(--link-background-color);
 }
+
 .toc li a:hover {
     text-decoration: underline;
 }
@@ -416,8 +438,7 @@ h6:hover .anchor {
     overflow-x: auto;
 }
 
-.share-buttons a {
-}
+.share-buttons a {}
 
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
@@ -486,6 +507,7 @@ h6:hover .anchor {
 .paginav a span {
     transition: var(--link-transition);
 }
+
 .paginav a:hover span:not(.title) {
     box-shadow: 0 1px 0;
 }
@@ -518,36 +540,44 @@ h6:hover .anchor {
 .social-links {
     margin: calc(var(--content-gap) * 2) 0;
 }
+
 /* shortcode */
 .social-quote {
     padding: 1em;
 }
+
 .post-content .social-quote {
     margin-bottom: var(--content-gap);
 }
+
 .social-quote.tweet {
     background-color: var(--code-bg);
     border-left: 3px solid var(--twitter-color);
 }
+
 .social-quote.tweet svg {
     color: var(--twitter-color);
 }
+
 .social-quote .title {
     margin-bottom: .5em;
     font-weight: 500;
 }
+
 .social-quote .title svg {
     width: 20px;
     height: 20px;
     vertical-align: text-bottom;
 }
+
 .social-quote .title span {
     margin-inline-start: .5em;
 }
 
-.social-quote p > a {
+.social-quote p>a {
     margin-inline-start: .5em;
 }
+
 .social-quote blockquote {
     font-size: .8em;
     /* reset for .post-content blockquote */
@@ -555,13 +585,15 @@ h6:hover .anchor {
     padding: 0;
     border-inline-start: 0;
 }
+
 .social-quote blockquote a {
     font-weight: 500;
     color: var(--primary);
     box-shadow: var(--link-underline-shadow);
     transition: var(--link-transition);
 }
-.social-quote blockquote > a:hover {
+
+.social-quote blockquote>a:hover {
     color: var(--twitter-color);
     box-shadow: 0 2px 0 var(--twitter-color);
 }
@@ -581,13 +613,16 @@ h6:hover .anchor {
 .comments {
     margin: var(--content-gap) 0;
 }
+
 .comments .title {
     margin: 20px 0;
     font-size: 1.5em;
 }
-.comments .title > span {
+
+.comments .title>span {
     line-height: 1.5rem;
 }
+
 .comments .title .counter {
     color: var(--link-hover-color);
     font-size: 1rem;
@@ -612,31 +647,39 @@ h6:hover .anchor {
 .footnotes hr {
     display: none;
 }
+
 .footnotes a {
     box-shadow: none;
     text-decoration: underline;
 }
+
 .footnotes a:hover {
     box-shadow: none;
     text-decoration: underline;
 }
+
 .footnotes ol {
     margin: 0;
 }
+
 .footnotes ol li {
     margin: 0 0 6px 0;
 }
+
 .footnotes ol li p {
     line-height: 1.5em;
     margin: 0;
 }
+
 /* fix tweet-ref makes the li markers sink at the bottom */
-.footnotes ol li > * {
+.footnotes ol li>* {
     vertical-align: top;
 }
+
 .footnotes ol li:target {
     background-color: var(--link-background-color);
 }
+
 .footnotes ol:before {
     content: "Footnotes";
     font-size: 1.5em;
@@ -649,6 +692,7 @@ h6:hover .anchor {
     width: calc(100% - 2em);
     display: inline-block;
 }
+
 .tweet-ref blockquote {
     margin: 3px 0 0 0;
     border-inline-color: var(--tertiary);
