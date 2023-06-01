@@ -211,11 +211,11 @@ pre:hover .copy-code {
     vertical-align: -0.15em;
 }
 
-.meta-item a {
+.meta-item a>span {
     transition: var(--link-transition);
 }
 
-.meta-item a:hover {
+.meta-item a>span:hover {
     color: var(--primary);
     box-shadow: 0 1px 0 var(--secondary);
 }
@@ -225,12 +225,12 @@ pre:hover .copy-code {
 }
 
 .meta-item .post-tags a:not(:last-of-type):after {
-    content: ",";
+    content: "|";
 }
 
-.meta-item .post-tags a:before {
-    content: "#";
-}
+/* .meta-item .post-tags a:before {
+     content: "#";
+}*/
 
 
 /* images */
